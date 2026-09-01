@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:top 40px;
+    font-family: Arial;
+}
+.card{
+    margin:top 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.cercle-couleur{
+width:230px;
+height: 230px;
+background-color:#159a9c;
+border-radius: 50%;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.photo{
+width: 210px;
+height: 210px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid white;
+}
+h1{ color: #159a9c;}
+h2{margin: 5px 0;}
+p{color: #159a9c; margin-top: 0;}
