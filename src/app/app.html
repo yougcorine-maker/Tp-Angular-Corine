@@ -9,3 +9,14 @@
  <p class="presentation"> Aujourd'hui passionée par le developpement web, programme 10000Codeurs.</p>
 </div>
 </div>
+<div style="text-align: center;margin-top: 40px;border-top: 2px solid #eee;padding-top: 20px;">
+  <h2> tu as cliqué {{count()}} fois</h2>
+  <button (click)="increment()" style="padding: 12px 25px; font-size: 18px; cursor:pointer;">
+    cliquez ici
+  </button>
+  @if(count()> 5) {
+    <p style="color: green;font-weight: bold;">
+      Bravo tu as beaucoup cliqué
+    </p>
+  }
+</div>

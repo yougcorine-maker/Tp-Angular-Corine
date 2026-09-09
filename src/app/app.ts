@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports:[],
   templateUrl: './app.html',
+   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('tp-angular');
+  count=signal(0);
+  title=signal('tp-angular');
+  increment(){
+    this.count.update(v => v + 1);
+  }
 }
